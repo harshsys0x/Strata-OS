@@ -1,0 +1,1 @@
+export PATH ="/d/osdev/opt/cross/bin/:$PATH"
