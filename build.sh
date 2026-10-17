@@ -100,3 +100,8 @@ cp target/target/debug/kernel isodir/boot/myos.bin
 cp grub.cfg isodir/boot/grub/grub.cfg
 
 grub-mkrescue -o myos.iso isodir
+
+
+ISO_WIN=$(wslpath -w /mnt/d/Strata-OS/myos.iso)
+
+/mnt/d/Qemu/qemu-system-i386.exe -cdrom "$ISO_WIN"
