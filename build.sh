@@ -105,3 +105,5 @@ grub-mkrescue -o myos.iso isodir
 ISO_WIN=$(wslpath -w /mnt/d/Strata-OS/myos.iso)
 
 /mnt/d/Qemu/qemu-system-i386.exe -cdrom "$ISO_WIN"
+
+# cargo +nightly expand --bin kernel --target x86_64-unknown-linux-gnu
